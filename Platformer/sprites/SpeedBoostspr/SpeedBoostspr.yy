@@ -20,8 +20,8 @@
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1b9815e1-e23d-41b3-bc02-e04b19b46e1d","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"1b9815e1-e23d-41b3-bc02-e04b19b46e1d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"22063370-35fd-4a33-945a-1c4f018fb290","blendMode":0,"displayName":"default","isLocked":false,"name":"22063370-35fd-4a33-945a-1c4f018fb290","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"1b9815e1-e23d-41b3-bc02-e04b19b46e1d","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"1b9815e1-e23d-41b3-bc02-e04b19b46e1d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"SpeedBoostspr",
   "nineSlice":null,
