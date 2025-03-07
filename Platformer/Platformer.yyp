@@ -34,6 +34,7 @@
   },
   "name":"Platformer",
   "resources":[
+    {"id":{"name":"ObjPlayer","path":"objects/ObjPlayer/ObjPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Enemy1Attackspr","path":"sprites/Enemy1Attackspr/Enemy1Attackspr.yy",},},
     {"id":{"name":"Enemy1Idlespr","path":"sprites/Enemy1Idlespr/Enemy1Idlespr.yy",},},
