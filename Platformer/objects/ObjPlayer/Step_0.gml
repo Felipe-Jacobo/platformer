@@ -1,37 +1,71 @@
-keyJump = keyboard_check(ord("w")) || keyboard_check(vk_space);
-keyRight = keyboard_check(ord("D"));
-keyLeft = keyboard_check(ord("A"));
 
-var xMove = keyRight - keyLeft;
+right = keyboard_check(ord("D"));
+left = keyboard_check(ord("A"));
+jump = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
 
-if (xMove != 0)
+moveDir = right - left;
+//xSpd = moveDir * maxSpeed;
+
+if (jump)
 {
-	if (lastH != xMove)
-	{
-		lastH = xMove;
-		accelFinal = 0;
-	}
-	if (accelFinal <= accelMax)
-	{
-		accelFinal += accel;
-	}
+	jumpBufferTimer = bufferTime;
 }
-else
+if (jumpBufferTimer > 0)
 {
-	if (accelFinal > 0)
-	{
-		accelFinal -= accel;
-	}
+	jumpBuffered = 1;
+	jumpBufferTimer--;
+}
+else 
+{
+	jumpBuffered = 0;
 }
 
-if (accelFinal < accel)
+if (KeysPressed())
 {
-	accelFinal = 0;
-	lastH = 0;
-	
+	xSpd = lerp(xSpd, maxSpeed*moveDir, accel);
+}
+else 
+{
+	xSpd = lerp(xSpd, 0, deccel);
 }
 
-xSpd = accelFinal * lastH;
+var pixel = .5;
+if (place_meeting(x +xSpd, y, ObjCollidable))
+{
+	var pixelCheck = pixel * sign(xSpd);
+	while (!place_meeting(x + pixelCheck, y, ObjCollidable))
+	{
+		x += pixelCheck;
+	}
+	xSpd = 0;
+}
 
-x += xSpd;
+
+x += xSpd
+
+ySpd += grav;
+if (ySpd > termVel)
+{
+	ySpd = termVel;
+}
+
+if (jumpBuffered && place_meeting(x, y + 1, ObjCollidable))
+{
+	jumpBuffered = false;
+	jumpBufferTimer = 0;
+	ySpd = jumpSpeed
+}
+
+var subPixel = .5;
+if (place_meeting(x, y + ySpd, ObjCollidable))
+{
+	var _pixelCheck = subPixel * sign(ySpd);
+	while (!place_meeting(x, y + _pixelCheck, ObjCollidable))
+	{
+		y += _pixelCheck
+	}
+	ySpd = 0;
+}
+
 y += ySpd;
+

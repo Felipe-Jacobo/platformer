@@ -34,8 +34,10 @@
   },
   "name":"Platformer",
   "resources":[
+    {"id":{"name":"ObjCollidable","path":"objects/ObjCollidable/ObjCollidable.yy",},},
     {"id":{"name":"ObjPlayer","path":"objects/ObjPlayer/ObjPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"KeysPressed","path":"scripts/KeysPressed/KeysPressed.yy",},},
     {"id":{"name":"Enemy1Attackspr","path":"sprites/Enemy1Attackspr/Enemy1Attackspr.yy",},},
     {"id":{"name":"Enemy1Idlespr","path":"sprites/Enemy1Idlespr/Enemy1Idlespr.yy",},},
     {"id":{"name":"Enemy1Walkspr","path":"sprites/Enemy1Walkspr/Enemy1Walkspr.yy",},},
@@ -49,6 +51,7 @@
     {"id":{"name":"PlayerJumpspr","path":"sprites/PlayerJumpspr/PlayerJumpspr.yy",},},
     {"id":{"name":"PlayerRunspr","path":"sprites/PlayerRunspr/PlayerRunspr.yy",},},
     {"id":{"name":"SpeedBoostspr","path":"sprites/SpeedBoostspr/SpeedBoostspr.yy",},},
+    {"id":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},},
     {"id":{"name":"StunPowerspr","path":"sprites/StunPowerspr/StunPowerspr.yy",},},
   ],
   "resourceType":"GMProject",
