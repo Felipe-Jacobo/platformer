@@ -7,6 +7,7 @@ ySpd = 0;
 grav = .2;
 termVel = 6;
 jumpSpeed = -5;
+grounded = 1;
 
 bufferTime = 5;
 jumpBuffered = 0;
