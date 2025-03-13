@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"Enemy1Idlespr",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":47,
   "bbox_left":2,
   "bbox_right":25,

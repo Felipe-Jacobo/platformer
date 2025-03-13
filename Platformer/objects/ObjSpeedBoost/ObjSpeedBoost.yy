@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"ObjCollidable",
-  "eventList":[],
+  "%Name":"ObjSpeedBoost",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"ObjPlayer","path":"objects/ObjPlayer/ObjPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"ObjCollidable",
+  "name":"ObjSpeedBoost",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -26,10 +28,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"ObjColspr",
-    "path":"sprites/ObjColspr/ObjColspr.yy",
+    "name":"SpeedBoostspr",
+    "path":"sprites/SpeedBoostspr/SpeedBoostspr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

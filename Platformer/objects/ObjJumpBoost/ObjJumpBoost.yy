@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"ObjCollidable",
-  "eventList":[],
+  "%Name":"ObjJumpBoost",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"ObjPlayer","path":"objects/ObjPlayer/ObjPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"ObjCollidable",
+  "name":"ObjJumpBoost",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -26,10 +28,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"ObjColspr",
-    "path":"sprites/ObjColspr/ObjColspr.yy",
+    "name":"JumpBoostspr",
+    "path":"sprites/JumpBoostspr/JumpBoostspr.yy",
   },
   "spriteMaskId":null,
   "visible":true,
